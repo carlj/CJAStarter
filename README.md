@@ -1,5 +1,7 @@
 #CJAStarter
 
+[![Build Status](https://travis-ci.org/carlj/CJAStarter.png?branch=master)](https://travis-ci.org/carlj/CJAStarter)
+
 ##Installation
 Just drag & drop the [`CJAStarter.h`](CJAStarter/CJAStarter.h) and [`CJAStarter.m`](CJAStarter/CJAStarter.m) to your project.
 
