@@ -13,7 +13,6 @@
 
 @property (nonatomic, strong) CJAStarter *starter;
 @property (nonatomic, assign) SEL currentSelector;
-@property (nonatomic, strong) NSConditionLock *lock;
 @property (nonatomic, strong) dispatch_semaphore_t semaphore;
 
 @end
@@ -61,7 +60,6 @@
     sleep(1);
     index = 1;
     task.finished = YES;
-
   }];
   
   __block typeof(self) blockSelf = self;
@@ -87,13 +85,13 @@
   self.currentSelector = _cmd;
   
   __block int index = 0;
-  __block typeof(self) blockSelf = self;
   CJAStarterTask *task1 = [self.starter addAsyncTaskBlock:^(CJAStarterTask *task){
     sleep(1);
     index = 1;
     task.finished = YES;
   }];
   
+  __block typeof(self) blockSelf = self;
   CJAStarterTask *task2 = [self.starter addAsyncTaskBlock:^(CJAStarterTask *task){
     
     sleep(2);
