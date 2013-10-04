@@ -21,10 +21,9 @@
 @implementation AsyncedTestCases
 
 - (void)setUp {
+  [super setUp];
   
-  self.lock = [NSConditionLock new];
   self.semaphore = dispatch_semaphore_create(0);
-  
   
   self.starter = [CJAStarter new];
 }
