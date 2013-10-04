@@ -5,7 +5,7 @@
 //  Copyright (c) 2013 Carl Jahn. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 extern NSString *const CJAStarterFinishedNotificationName;
 extern NSString *const CJAStarterStartedNotificationName;
@@ -17,10 +17,10 @@ typedef void(^CJAStarterTaskBlock)(CJAStarterTask *initializer);
 
 + (id)sharedInstance;
 
-- (void)addCJAStarterTask:(CJAStarterTask *)task;
-- (CJAStarterTask *)addCJAStarterTaskClass:(Class)class;
-- (CJAStarterTask *)addCJAStarterTaskBlock:(CJAStarterTaskBlock)task;
-- (CJAStarterTask *)addAsyncCJAStarterTaskBlock:(CJAStarterTaskBlock)task;
+- (void)addTask:(CJAStarterTask *)task;
+- (CJAStarterTask *)addTaskClass:(Class)class;
+- (CJAStarterTask *)addTaskBlock:(CJAStarterTaskBlock)task;
+- (CJAStarterTask *)addAsyncTaskBlock:(CJAStarterTaskBlock)task;
 
 - (void)start;
 

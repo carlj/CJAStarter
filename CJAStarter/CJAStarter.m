@@ -46,7 +46,7 @@ NSString *const CJAStarterFinishedNotificationName = @"InitializerFactoryFinishe
   return sharedInstance;
 }
 
-- (void)addCJAStarterTask:(CJAStarterTask *)task {
+- (void)addTask:(CJAStarterTask *)task {
   
   if (!task) {
     return;
@@ -56,7 +56,7 @@ NSString *const CJAStarterFinishedNotificationName = @"InitializerFactoryFinishe
 }
 
 
-- (CJAStarterTask *)addCJAStarterTaskClass:(Class)class {
+- (CJAStarterTask *)addTaskClass:(Class)class {
   
   if (![class isSubclassOfClass: [CJAStarterTask class]] ) {
     return nil;
@@ -68,7 +68,7 @@ NSString *const CJAStarterFinishedNotificationName = @"InitializerFactoryFinishe
   return newCJAStarter;
 }
 
-- (CJAStarterTask *)addCJAStarterTaskBlock:(CJAStarterTaskBlock)task{
+- (CJAStarterTask *)addTaskBlock:(CJAStarterTaskBlock)task{
   
   if (!task) {
     return nil;
@@ -80,8 +80,8 @@ NSString *const CJAStarterFinishedNotificationName = @"InitializerFactoryFinishe
   return blockCJAStarter;
 }
 
-- (CJAStarterTask *)addAsyncCJAStarterTaskBlock:(CJAStarterTaskBlock)task {
-  CJAStarterTask *asyncTask = [self addCJAStarterTaskBlock:task];
+- (CJAStarterTask *)addAsyncTaskBlock:(CJAStarterTaskBlock)task {
+  CJAStarterTask *asyncTask = [self addTaskBlock:task];
   asyncTask.async = YES;
   
   return asyncTask;

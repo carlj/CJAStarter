@@ -21,8 +21,8 @@
 		FA7C3C2717FEB2DD004362D4 /* CustomClassTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C3C1D17FEB2CB004362D4 /* CustomClassTestCase.m */; };
 		FA7C3C2817FEB2DD004362D4 /* CustomTask.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C3C1F17FEB2CB004362D4 /* CustomTask.m */; };
 		FA7C3C2917FEB2DD004362D4 /* SyncedTestCases.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C3C2117FEB2CB004362D4 /* SyncedTestCases.m */; };
-		FA7C3C2B17FEB2EE004362D4 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7C3C2A17FEB2EE004362D4 /* GHUnitIOS.framework */; };
 		FA7C3C3017FEB49A004362D4 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C3C2E17FEB492004362D4 /* ExampleViewController.m */; };
+		FA7C3C3617FEB7B1004362D4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7C3C3517FEB7B1004362D4 /* XCTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +58,9 @@
 		FA7C3C1F17FEB2CB004362D4 /* CustomTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTask.m; path = Tests/CustomTask.m; sourceTree = SOURCE_ROOT; };
 		FA7C3C2017FEB2CB004362D4 /* SyncedTestCases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SyncedTestCases.h; path = Tests/SyncedTestCases.h; sourceTree = SOURCE_ROOT; };
 		FA7C3C2117FEB2CB004362D4 /* SyncedTestCases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SyncedTestCases.m; path = Tests/SyncedTestCases.m; sourceTree = SOURCE_ROOT; };
-		FA7C3C2A17FEB2EE004362D4 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = Tests/GHUnitIOS.framework; sourceTree = "<group>"; };
 		FA7C3C2D17FEB492004362D4 /* ExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleViewController.h; path = Example/Classes/ExampleViewController.h; sourceTree = "<group>"; };
 		FA7C3C2E17FEB492004362D4 /* ExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleViewController.m; path = Example/Classes/ExampleViewController.m; sourceTree = "<group>"; };
+		FA7C3C3517FEB7B1004362D4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7C3C2B17FEB2EE004362D4 /* GHUnitIOS.framework in Frameworks */,
+				FA7C3C3617FEB7B1004362D4 /* XCTest.framework in Frameworks */,
 				FA05568B17FEADB50019F7EA /* UIKit.framework in Frameworks */,
 				FA05568A17FEADB50019F7EA /* Foundation.framework in Frameworks */,
 			);
@@ -110,7 +110,7 @@
 		FA05566E17FEADB50019F7EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA7C3C2A17FEB2EE004362D4 /* GHUnitIOS.framework */,
+				FA7C3C3517FEB7B1004362D4 /* XCTest.framework */,
 				FA05566F17FEADB50019F7EA /* Foundation.framework */,
 				FA05567117FEADB50019F7EA /* CoreGraphics.framework */,
 				FA05567317FEADB50019F7EA /* UIKit.framework */,

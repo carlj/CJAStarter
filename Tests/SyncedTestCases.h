@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Carl Jahn. All rights reserved.
 //
 
-#import <GHUnitIOS/GHUnit.h>
+#import <XCTest/XCTest.h>
 
-@interface SyncedTestCases : GHTestCase
+@interface SyncedTestCases : XCTestCase
 
 @end

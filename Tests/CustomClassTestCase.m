@@ -14,6 +14,7 @@
 
 @property (nonatomic, strong) CJAStarter *starter;
 @property (nonatomic, assign) SEL currentSelector;
+@property (nonatomic, strong) NSConditionLock *lock;
 @end
 
 @implementation CustomClassTestCase
@@ -29,34 +30,32 @@
 }
 
 - (void)test1 {
-  [self prepare];
 
   self.currentSelector = _cmd;
   
   [self.starter start];
   
   CustomTask *task = [CustomTask new];
-  [self.starter addCJAStarterTask: task];
+  [self.starter addTask: task];
   [self.starter start];
 
-  [self waitForStatus:kGHUnitWaitStatusSuccess timeout:2];
+
+  [self.lock lockWhenCondition: 1];
 }
 
 - (void)test2 {
-  [self prepare];
 
   self.currentSelector = _cmd;
 
-  [self.starter addCJAStarterTaskClass: [CustomTask class] ];
+  [self.starter addTaskClass: [CustomTask class] ];
   [self.starter start];
   
-  [self waitForStatus:kGHUnitWaitStatusSuccess timeout:2];
-
+  [self.lock lockWhenCondition: 1];
 }
 
 - (void)customTaskNotification:(NSNotification *)notification {
   NSLog(@"%s", __FUNCTION__);
-  [self notify:kGHUnitWaitStatusSuccess forSelector: self.currentSelector];
+  [self.lock unlockWithCondition: 1];
 }
 
 @end

@@ -24,45 +24,45 @@
 - (void)test1 {
   
   __block int index = 0;
-  [self.starter addCJAStarterTaskBlock:^(CJAStarterTask *task){
+  [self.starter addTaskBlock:^(CJAStarterTask *task){
     index = 1;
   }];
   [self.starter start];
   
-  GHAssertEquals(1, index, @"");
+  XCTAssertEqual(1, index, @"indexes arent the same");
 }
 
 
 - (void)test2 {
     
   __block int index = 0;
-  [self.starter addCJAStarterTaskBlock:^(CJAStarterTask *task){
+  [self.starter addTaskBlock:^(CJAStarterTask *task){
     index = 1;
   }];
   
-  [self.starter addCJAStarterTaskBlock:^(CJAStarterTask *task){
+  [self.starter addTaskBlock:^(CJAStarterTask *task){
     index = 2;
   }];
   [self.starter start];
   
-  GHAssertEquals(2, index, nil);
+  XCTAssertEqual(2, index, @"indexes arent the same");
 }
 
 - (void)test3 {
   
   __block int index = 0;
-  CJAStarterTask *task1 = [self.starter addCJAStarterTaskBlock:^(CJAStarterTask *task){
+  CJAStarterTask *task1 = [self.starter addTaskBlock:^(CJAStarterTask *task){
     index = 2;
   }];
   
-  CJAStarterTask *task2 = [self.starter addCJAStarterTaskBlock:^(CJAStarterTask *task){
+  CJAStarterTask *task2 = [self.starter addTaskBlock:^(CJAStarterTask *task){
     index = 1;
   }];
   
   task1.dependencieTask = task2;
   [self.starter start];
   
-  GHAssertEquals(1, index, nil);
+  XCTAssertEqual(1, index, @"indexes arent the same");
 }
 
 - (void)test4 {
@@ -71,12 +71,12 @@
   CJAStarterTask *task1 = [[CJAStarterTask alloc] initWithTask:^(CJAStarterTask *task){
     index = 1;
   }];
-  [self.starter addCJAStarterTask: task1];
+  [self.starter addTask: task1];
   
   
   [self.starter start];
   
-  GHAssertEquals(1, index, nil);
+  XCTAssertEqual(1, index, @"indexes arent the same");
   
 }
 
