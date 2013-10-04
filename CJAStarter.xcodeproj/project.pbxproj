@@ -16,9 +16,13 @@
 		FA05568B17FEADB50019F7EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA05567317FEADB50019F7EA /* UIKit.framework */; };
 		FA27830B17FEAEC100ED373D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA27830A17FEAEC100ED373D /* Images.xcassets */; };
 		FA27830F17FEAEEE00ED373D /* CJAStarterTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA27830E17FEAEEE00ED373D /* CJAStarterTests-Info.plist */; };
-		FA7C3C1517FEB0BC004362D4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7C3C1417FEB0BC004362D4 /* XCTest.framework */; };
-		FA7C3C1617FEB0C7004362D4 /* CJAStarterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA27830C17FEAEE500ED373D /* CJAStarterTests.m */; };
 		FA7C3C1917FEB0D9004362D4 /* CJAStarter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C3C1817FEB0D9004362D4 /* CJAStarter.m */; };
+		FA7C3C2617FEB2DD004362D4 /* AsyncedTestCases.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C3C1B17FEB2CB004362D4 /* AsyncedTestCases.m */; };
+		FA7C3C2717FEB2DD004362D4 /* CustomClassTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C3C1D17FEB2CB004362D4 /* CustomClassTestCase.m */; };
+		FA7C3C2817FEB2DD004362D4 /* CustomTask.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C3C1F17FEB2CB004362D4 /* CustomTask.m */; };
+		FA7C3C2917FEB2DD004362D4 /* SyncedTestCases.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C3C2117FEB2CB004362D4 /* SyncedTestCases.m */; };
+		FA7C3C2B17FEB2EE004362D4 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7C3C2A17FEB2EE004362D4 /* GHUnitIOS.framework */; };
+		FA7C3C3017FEB49A004362D4 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7C3C2E17FEB492004362D4 /* ExampleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +47,20 @@
 		FA05567F17FEADB50019F7EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Example/Classes/AppDelegate.m; sourceTree = "<group>"; };
 		FA05568717FEADB50019F7EA /* CJAStarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJAStarterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA27830A17FEAEC100ED373D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Example/Ressources/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		FA27830C17FEAEE500ED373D /* CJAStarterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJAStarterTests.m; path = Tests/CJAStarterTests.m; sourceTree = SOURCE_ROOT; };
 		FA27830E17FEAEEE00ED373D /* CJAStarterTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "CJAStarterTests-Info.plist"; path = "Tests/Other Sources/CJAStarterTests-Info.plist"; sourceTree = SOURCE_ROOT; };
-		FA7C3C1417FEB0BC004362D4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FA7C3C1717FEB0D9004362D4 /* CJAStarter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAStarter.h; sourceTree = "<group>"; };
 		FA7C3C1817FEB0D9004362D4 /* CJAStarter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAStarter.m; sourceTree = "<group>"; };
+		FA7C3C1A17FEB2CB004362D4 /* AsyncedTestCases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncedTestCases.h; path = Tests/AsyncedTestCases.h; sourceTree = SOURCE_ROOT; };
+		FA7C3C1B17FEB2CB004362D4 /* AsyncedTestCases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncedTestCases.m; path = Tests/AsyncedTestCases.m; sourceTree = SOURCE_ROOT; };
+		FA7C3C1C17FEB2CB004362D4 /* CustomClassTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomClassTestCase.h; path = Tests/CustomClassTestCase.h; sourceTree = SOURCE_ROOT; };
+		FA7C3C1D17FEB2CB004362D4 /* CustomClassTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomClassTestCase.m; path = Tests/CustomClassTestCase.m; sourceTree = SOURCE_ROOT; };
+		FA7C3C1E17FEB2CB004362D4 /* CustomTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTask.h; path = Tests/CustomTask.h; sourceTree = SOURCE_ROOT; };
+		FA7C3C1F17FEB2CB004362D4 /* CustomTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTask.m; path = Tests/CustomTask.m; sourceTree = SOURCE_ROOT; };
+		FA7C3C2017FEB2CB004362D4 /* SyncedTestCases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SyncedTestCases.h; path = Tests/SyncedTestCases.h; sourceTree = SOURCE_ROOT; };
+		FA7C3C2117FEB2CB004362D4 /* SyncedTestCases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SyncedTestCases.m; path = Tests/SyncedTestCases.m; sourceTree = SOURCE_ROOT; };
+		FA7C3C2A17FEB2EE004362D4 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = Tests/GHUnitIOS.framework; sourceTree = "<group>"; };
+		FA7C3C2D17FEB492004362D4 /* ExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleViewController.h; path = Example/Classes/ExampleViewController.h; sourceTree = "<group>"; };
+		FA7C3C2E17FEB492004362D4 /* ExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleViewController.m; path = Example/Classes/ExampleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7C3C1517FEB0BC004362D4 /* XCTest.framework in Frameworks */,
+				FA7C3C2B17FEB2EE004362D4 /* GHUnitIOS.framework in Frameworks */,
 				FA05568B17FEADB50019F7EA /* UIKit.framework in Frameworks */,
 				FA05568A17FEADB50019F7EA /* Foundation.framework in Frameworks */,
 			);
@@ -97,7 +110,7 @@
 		FA05566E17FEADB50019F7EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA7C3C1417FEB0BC004362D4 /* XCTest.framework */,
+				FA7C3C2A17FEB2EE004362D4 /* GHUnitIOS.framework */,
 				FA05566F17FEADB50019F7EA /* Foundation.framework */,
 				FA05567117FEADB50019F7EA /* CoreGraphics.framework */,
 				FA05567317FEADB50019F7EA /* UIKit.framework */,
@@ -117,7 +130,14 @@
 		FA05568E17FEADB50019F7EA /* CJAStarterTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA27830C17FEAEE500ED373D /* CJAStarterTests.m */,
+				FA7C3C1A17FEB2CB004362D4 /* AsyncedTestCases.h */,
+				FA7C3C1B17FEB2CB004362D4 /* AsyncedTestCases.m */,
+				FA7C3C1C17FEB2CB004362D4 /* CustomClassTestCase.h */,
+				FA7C3C1D17FEB2CB004362D4 /* CustomClassTestCase.m */,
+				FA7C3C1E17FEB2CB004362D4 /* CustomTask.h */,
+				FA7C3C1F17FEB2CB004362D4 /* CustomTask.m */,
+				FA7C3C2017FEB2CB004362D4 /* SyncedTestCases.h */,
+				FA7C3C2117FEB2CB004362D4 /* SyncedTestCases.m */,
 				FA05568F17FEADB50019F7EA /* Supporting Files */,
 			);
 			path = CJAStarterTests;
@@ -144,6 +164,8 @@
 		FA27831117FEAF3100ED373D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FA7C3C2D17FEB492004362D4 /* ExampleViewController.h */,
+				FA7C3C2E17FEB492004362D4 /* ExampleViewController.m */,
 				FA05567E17FEADB50019F7EA /* AppDelegate.h */,
 				FA05567F17FEADB50019F7EA /* AppDelegate.m */,
 			);
@@ -263,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA05568017FEADB50019F7EA /* AppDelegate.m in Sources */,
+				FA7C3C3017FEB49A004362D4 /* ExampleViewController.m in Sources */,
 				FA05567C17FEADB50019F7EA /* main.m in Sources */,
 				FA7C3C1917FEB0D9004362D4 /* CJAStarter.m in Sources */,
 			);
@@ -272,7 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7C3C1617FEB0C7004362D4 /* CJAStarterTests.m in Sources */,
+				FA7C3C2617FEB2DD004362D4 /* AsyncedTestCases.m in Sources */,
+				FA7C3C2917FEB2DD004362D4 /* SyncedTestCases.m in Sources */,
+				FA7C3C2817FEB2DD004362D4 /* CustomTask.m in Sources */,
+				FA7C3C2717FEB2DD004362D4 /* CustomClassTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +422,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/carljahn/Desktop/yti/github/CJAStarter/Tests,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/Other Sources/CJAStarter-Prefix.pch";
@@ -419,6 +446,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/carljahn/Desktop/yti/github/CJAStarter/Tests,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/Other Sources/CJAStarter-Prefix.pch";
